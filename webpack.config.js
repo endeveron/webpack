@@ -3,26 +3,11 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['@babel/preset-env', { targets: "defaults" }]
-            ]
-          }
-        }
-      }
-    ]
-  },
+  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: './src/index.js',
-    analytics: './src/analytics.js'
+    main: './index.js',
+    analytics: './analytics.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -30,8 +15,16 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './src/index.html'
+      template: './index.html'
     }),
     new CleanWebpackPlugin()
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
 }
