@@ -16,7 +16,7 @@ h1 {
   text-align: center;
 }
 
-/* .logo {
+.logo {
   background-image: url("../assets/webpack-logo.png");
   background-size: cover;
   height: 200px;
@@ -26,4 +26,4 @@ h1 {
 
 .code {
   color: crimson;
-} */
+}
