@@ -106,7 +106,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./models/Post */ \"./models/Post.js\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/webpack-logo.png */ \"./assets/webpack-logo.png\");\n\r\n\r\n\r\n\r\nconst post = new _models_Post__WEBPACK_IMPORTED_MODULE_0__.default('Post Title', _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_2__.default)\r\n\r\nconsole.log('post: ', post.toString());\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @models/Post */ \"./models/Post.js\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _assets_webpack_logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/webpack-logo */ \"./assets/webpack-logo.png\");\n\r\n\r\n\r\n\r\nconst post = new _models_Post__WEBPACK_IMPORTED_MODULE_0__.default('Post Title', _assets_webpack_logo__WEBPACK_IMPORTED_MODULE_2__.default)\r\n\r\nconsole.log('post: ', post.toString());\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
